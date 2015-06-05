@@ -18,7 +18,17 @@ Just as each transit operator has multiple IDs, each bus stop and train station 
 * It's known in the Long Island Railroad's GTFS feed as `Stop #8`.
 * It's known in New Jersey Transit's GTFS feed as `Stop #105`.
 
-In the [Transitland Feed Registry](https://github.com/transitland/transitland-feed-registry), we've created listings for the San Francisco Municipal Transportation Agency (and we're working on a listing for New York's Penn Station). For the SFMTA, we've assigned the transit agency a Onestop ID of `o-9q8y-sanfranciscomunicipaltransportationagency` and its feed a Onestop ID of `f-9q8y-sanfranciscomunicipaltransportationagency`. You'll find more information attached to these Onestop IDs in this registry under [`/feeds/f-9q8y-SFMTA.json`](https://github.com/transitland/onestop-id-registry/blob/master/feeds/f-9q8y-sanfranciscomunicipaltransportationagency.json) and [`/operators/o-9q8y-sanfranciscomunicipaltransportationagency.geojson`](https://github.com/transitland/onestop-id-registry/blob/master/operators/o-9q8y-sanfranciscomunicipaltransportationagency.geojson). We also use these Onestop IDs in our [Transitland Datastore](https://github.com/transitland/transitland-datastore) service.
+In the [Transitland Feed Registry](https://github.com/transitland/transitland-feed-registry), we've created listings for the San Francisco Municipal Transportation Agency. For the SFMTA, we've assigned the transit agency a Onestop ID of `o-9q8y-sanfranciscomunicipaltransportationagency` and its feed a Onestop ID of `f-9q8y-sanfranciscomunicipaltransportationagency`. You'll find more information attached to these Onestop IDs in this registry under [`/feeds/f-9q8y-SFMTA.json`](https://github.com/transitland/transitland-feed-registry/blob/master/feeds/f-9q8y-sanfranciscomunicipaltransportationagency.json).
+
+We also use these Onestop IDs in our [Transitland Datastore](https://github.com/transitland/transitland-datastore) service. You can query it for:
+
+- the SFMTA feed: [`https://transit.land/api/v1/onestop_id/f-9q8y-sanfranciscomunicipaltransportationagency`](https://transit.land/api/v1/onestop_id/f-9q8y-sanfranciscomunicipaltransportationagency)
+- the SFMTA operator record: [`https://transit.land/api/v1/onestop_id/o-9q8y-sanfranciscomunicipaltransportationagency`](https://transit.land/api/v1/onestop_id/o-9q8y-sanfranciscomunicipaltransportationagency)
+- stops served by the SFMTA: [`https://transit.land/api/v1/stops?servedBy=o-9q8y-sanfranciscomunicipaltransportationagency`](https://transit.land/api/v1/stops?servedBy=o-9q8y-sanfranciscomunicipaltransportationagency)
+- routes operated by the SFMTA:
+[`https://transit.land/api/v1/routes?operatedBy=o-9q8y-sanfranciscomunicipaltransportationagency`](https://transit.land/api/v1/routes?operatedBy=o-9q8y-sanfranciscomunicipaltransportationagency)
+
+Notice how stops and routes are assigned their own Onestop IDs as well.
 
 ## What is in a Onestop ID?
 
@@ -50,3 +60,12 @@ A Onestop ID is an alphanumeric, global, immutable identifer for transit feeds, 
 3. an abbreviated name that's short but understandable. The only punctuation that is allowed are tildes (`~`) to indicate word breaks. The name doesn't have to be unique across the whole world, but it must be unique within the bounding box of the particular geohash.
 
 Onestop IDs are case insensitive. We recommend using lower case internally in your systems. When displaying IDs for users, feel free to capitalize for readability.
+
+Onestop IDs should be no longer than 64 characters.
+
+
+## Where is the authority for a Onestop ID
+
+For feeds and operators, Onestop IDs are defined in the [Transitland Feed Registry](https://github.com/transitland/transitland-feed-registry), a GitHub repository available to all for editing and use.
+
+For stops and routes, Onestop IDs are currently generated in the [Transitland Datastore web service](https://github.com/transitland/transitland-datastore). In the future, we aim to provide a distributed mechanism for registrying, updating, and removing Onestop IDs for stops and routes. We welcome your thoughts on how to best share this responsibility among systems and users.
