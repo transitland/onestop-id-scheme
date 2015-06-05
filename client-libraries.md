@@ -4,7 +4,7 @@
 
 * [**transitland-(python)-client**](https://github.com/transitland/transitland-python-client)
 
-We welcome client libraries in new and different languages. Please [open an issue on this repository](https://github.com/transitland/onestop-id/issues/new) if you'd like to propose a new client.
+We welcome client libraries in new and different languages. Please [open an issue on this repository](https://github.com/transitland/onestop-id-scheme/issues/new) if you'd like to propose a new client.
 
 ## Environment Variables
 

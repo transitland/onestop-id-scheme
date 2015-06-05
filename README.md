@@ -1,6 +1,6 @@
 # Onestop ID
 
-The Onestop ID scheme is an attempt to label and connect data about public transit that's coming from many agencies, around the world. For more about the rationale of the Onestop ID, please read the [introduction](introduction.md).
+The Onestop ID scheme is an attempt to label and connect data about public transit that are coming from many agencies, around the world. For more about the rationale of the Onestop ID, please read the [introduction](introduction.md).
 
 ## Contents
 
