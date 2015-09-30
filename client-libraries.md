@@ -1,5 +1,7 @@
 # Onestop ID client libraries
 
+<span style="color:orange;">MIGRATION MARING</span>
+
 * [**transitland-(ruby)-client**](https://github.com/transitland/transitland-ruby-client)
 
 * [**transitland-(python)-client**](https://github.com/transitland/transitland-python-client)
@@ -16,5 +18,3 @@ environment variable name | default value | notes
 `TRANSITLAND_FEED_REGISTRY_PATH` | `./tmp/transitland-feed-registry` | look here for a copy of the Feed Registry repo, before clone'ing a copy of the remote
 `TRANSITLAND_DATASTORE_URL` | `http://datastore.transit.land/api/v1` | where to query for data or create changesets
 `TRANSITLAND_DATASTORE_AUTH_TOKEN` | n/a | auth tokens are necessary to write to the Datastore (create a changeset or trigger a "feed eater" job)
-
-If you are not making use of the [Transitland Feed Registry](https://github.com/transitland/transitland-feed-registry) or [Transitland Datastore](https://github.com/transitland/transitland-datastore), you may not need all of the above.
