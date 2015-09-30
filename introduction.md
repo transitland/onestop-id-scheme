@@ -66,6 +66,12 @@ Onestop IDs should be no longer than 64 characters.
 
 ## Where is the authority for a Onestop ID
 
-For feeds and operators, Onestop IDs are defined in the [Transitland Feed Registry](https://github.com/transitland/transitland-feed-registry), a GitHub repository available to all for editing and use.
+Onestop IDs are currently generated in the [Transitland Datastore web service](https://github.com/transitland/transitland-datastore) hosted at `https://transit.land/api/v1`
 
-For stops and routes, Onestop IDs are currently generated in the [Transitland Datastore web service](https://github.com/transitland/transitland-datastore). In the future, we aim to provide a distributed mechanism for registrying, updating, and removing Onestop IDs for stops and routes. We welcome your thoughts on how to best share this responsibility among systems and users.
+To browse Onestop IDs for feeds and operators, try the [Transitland Feed Registry](https://transit.land/feed-registry).
+
+To browse Onestop IDs for operators, stops, and routes, try the [Transitland Playground](https://transit.land/playground).
+
+Onestop IDs are also included on all of the [Datastore's API endpoints](https://github.com/transitland/transitland-datastore/blob/master/README.md#api-endpoints).
+
+For the future, we're considering distributed mechanisms for registering, updating, and removing Onestop IDs. We welcome your thoughts on how to best share this responsibility among systems and users.
