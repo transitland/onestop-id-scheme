@@ -1,3 +1,3 @@
 # Web services
 
-* [Transitland Datastore](https://github.com/transitland/transitland-datastore) is a web service that aggregates feeds from the [Transitland Feed Registry](https://github.com/transitland/transitland-feed-registry) and assigns Onestop IDs to the routes and stops contained in those feeds.
+* [Transitland Datastore](https://github.com/transitland/transitland-datastore) is a web service that aggregates GTFS feeds using its FeedEater pipeline and serves out an API for operators, feeds, stops, routes, and schedule information, with Onestop IDs for all entities
