@@ -1,6 +1,8 @@
 # Onestop ID client libraries
 
-<span style="color:orange;">MIGRATION MARING</span>
+<span style="color:red;">Migration Warning.</span> Throughout October 2015, we're moving feed and operator records from the [GitHub-based Feed Registry](https://github.com/transitland/transitland-feed-registry) into Transitland's [Datastore API](https://github.com/transitland/transitland-datastore/blob/master/README.md#api-endpoints). These client libraries will be updated after the migration is complete, but will be broken in the meantime. Thanks for your patience&mdash;and your interest in the Onestop ID scheme!
+
+---
 
 * [**transitland-(ruby)-client**](https://github.com/transitland/transitland-ruby-client)
 
