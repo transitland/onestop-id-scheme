@@ -32,7 +32,7 @@ Notice how stops and routes are assigned their own Onestop IDs as well.
 
 ## What is in a Onestop ID?
 
-A Onestop ID is an alphanumeric, global, immutable identifer for transit feeds, operators/agencies, stops/stations, and routes provided by authoritative sources that contain timetable and geographic information for transit networks. Every Onestop ID includes three components, separated by hyphens. For example:
+A Onestop ID is an alphanumeric, global, immutable identifier for transit feeds, operators/agencies, stops/stations, and routes provided by authoritative sources that contain timetable and geographic information for transit networks. Every Onestop ID includes three components, separated by hyphens. For example:
 
 ![an example of a Onestop ID: 0-9q9-BART](images/onestop_id_example.png)
 
